@@ -1,0 +1,282 @@
+/* =========================
+   General Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* =========================
+   Header / Profile
+========================= */
+
+.hero {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.job-title {
+    color: #60a5fa;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.profile-text {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: #e5e7eb;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-links a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Sections
+========================= */
+
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    color: #1f2937;
+    font-size: 30px;
+    border-bottom: 3px solid #2563eb;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Cards
+========================= */
+
+.card,
+.skill-card,
+.project-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h3,
+.skill-card h3,
+.project-card h3 {
+    color: #1f2937;
+    margin-bottom: 6px;
+}
+
+.organization {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.date {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   Skills
+========================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card ul {
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+.skill-card li {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   Experience
+========================= */
+
+.card ul {
+    margin-top: 12px;
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   Projects
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    margin-bottom: 0;
+}
+
+.project-card p {
+    margin-bottom: 12px;
+}
+
+.technologies {
+    color: #555;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Contact
+========================= */
+
+.contact-section {
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background: #1f2937;
+    color: #d1d5db;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 35px 0;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .job-title {
+        font-size: 17px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-links span {
+        display: none;
+    }
+
+    .card,
+    .skill-card,
+    .project-card {
+        padding: 20px;
+    }
+}
